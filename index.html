@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container vopros">
+		<h1>Кто был первым человеком на Луне</h1>
+		<div class="border py-3 px-3 otvet">Юрий Гагарин</div>
+		<div class="border py-3 px-3 otvet2">Нил Армстронг</div>
+		<div class="border py-3 px-3 otvet3">Дин Армстронг</div>
+	</div>
+	<div class="container vopros2" style="display: none;">
+		<h1>5 на 5?</h1>
+		<div class="border py-3 px-3 otvet4">10</div>
+		<div class="border py-3 px-3 otvet5">55</div>
+		<div class="border py-3 px-3 otvet6">25</div>
+	</div>
+	<div class="container vopros3" style="display: none;">
+		<h1>Солнце это...</h1>
+		<div class="border py-3 px-3 otvet7">Звезда</div>
+		<div class="border py-3 px-3 otvet8">планета</div>
+		<div class="border py-3 px-3 otvet9">шарик</div>
+	</div>
+	<div class="container vopros4" style="display: none;">
+		<h1>Кто у тебя на потолке?</h1>
+		<div class="border py-3 px-3 otvet10">Я</div>
+		<div class="border py-3 px-3 otvet11">Гоблин</div>
+		<div class="border py-3 px-3 otvet12">Лампа</div>
+	</div>
+	<div class="container vopros5" style="display: none;">
+		<h1>Кто на картинке?</h1>
+		<div class="col-6 mx-auto">
+			<img src="Trevor.jpg" class="w-100">
+		</div>
+		<div class="border py-3 px-3 otvet13">Бомж Валера</div>
+		<div class="border py-3 px-3 otvet14">Дональд Трамп</div>
+		<div class="border py-3 px-3 otvet15">Тревор</div>
+	</div>
+	<div class="container vopros6" style="display: none;">
+		<h1>Из какой игры саундтрек?</h1>
+		<div class="col-6 mx-auto">
+			<audio controls>
+				<source src="undertale.mp3" type="">
+			</audio>
+		</div>
+		<div class="border py-3 px-3 otvet16">Undertale</div>
+		<div class="border py-3 px-3 otvet17">Minecraft</div>
+		<div class="border py-3 px-3 otvet18">Mortal Kombat</div>
+	</div>
+		<div class="container vopros7" style="display: none;">
+		<h1>Момент из какого фильма?</h1>
+		<div class="col-6 mx-auto">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/zpQUdHFMH_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="border py-3 px-3 otvet19">Один дома</div>
+		<div class="border py-3 px-3 otvet20">Один дома 2</div>
+		<div class="border py-3 px-3 otvet21">Один дома 5</div>
+	</div>
+
+
+	<script type="text/javascript">
+		document.querySelector(".otvet").onclick = function(){
+			alert("Нет")
+		}		
+		document.querySelector(".otvet2").onclick = function(){
+			alert("да")
+			document.querySelector(".vopros").style.display = "none"
+			document.querySelector(".vopros2").style.display = "block"
+		}
+		document.querySelector(".otvet3").onclick = function(){
+			alert("Нет")
+		}
+
+		//2vopros
+		document.querySelector(".otvet4").onclick = function(){
+			alert("Нет")
+		}		
+		document.querySelector(".otvet6").onclick = function(){
+			alert("да")
+			document.querySelector(".vopros2").style.display = "none"
+			document.querySelector(".vopros3").style.display = "block"
+		}
+		document.querySelector(".otvet5").onclick = function(){
+			alert("Нет")
+		}
+
+		//3 вопрос
+		document.querySelector(".otvet8").onclick = function(){
+			alert("Нет")
+		}		
+		document.querySelector(".otvet7").onclick = function(){
+			alert("да")
+			document.querySelector(".vopros3").style.display = "none"
+			document.querySelector(".vopros4").style.display = "block"
+		}
+		document.querySelector(".otvet9").onclick = function(){
+			alert("Нет")
+		}
+
+		//4vopros
+		document.querySelector(".otvet10").onclick = function(){
+			alert("Нет")
+		}		
+		document.querySelector(".otvet11").onclick = function(){
+			alert("да")
+			document.querySelector(".vopros4").style.display = "none"
+			document.querySelector(".vopros5").style.display = "block"
+		}
+		document.querySelector(".otvet12").onclick = function(){
+			alert("Нет")
+		}
+		//5 vopros
+		document.querySelector(".otvet13").onclick = function(){
+			alert("Нет")
+		}		
+		document.querySelector(".otvet15").onclick = function(){
+			alert("да")
+			document.querySelector(".vopros5").style.display = "none"
+			document.querySelector(".vopros6").style.display = "block"
+		}
+		document.querySelector(".otvet14").onclick = function(){
+			alert("Нет")
+		}
+		//6 vopros
+		document.querySelector(".otvet17").onclick = function(){
+			alert("Нет")
+		}		
+		document.querySelector(".otvet16").onclick = function(){
+			alert("да")
+			document.querySelector(".vopros6").style.display = "none"
+			document.querySelector(".vopros7").style.display = "block"
+		}
+		document.querySelector(".otvet18").onclick = function(){
+			alert("Нет")
+		}
+		//7 vopros
+		document.querySelector(".otvet20").onclick = function(){
+			alert("Нет")
+		}		
+		document.querySelector(".otvet19").onclick = function(){
+			alert("да")
+			document.querySelector(".vopros7").style.display = "none"
+			document.querySelector(".vopros8").style.display = "block"
+		}
+		document.querySelector(".otvet21").onclick = function(){
+			alert("Нет")
+		}
+
+		
+		
+		
+	</script>
+</body>
+</html>
